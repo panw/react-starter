@@ -1,6 +1,11 @@
 import React from 'react';
 import $ from 'jquery';
+window.jQuery = $;
+window.Tether = require('tether');
+require('bootstrap');
+import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchInput from './search_input';
+
 
 export default class Main extends React.Component {
   constructor() {
@@ -9,6 +14,8 @@ export default class Main extends React.Component {
       searchResults: []
     };
     this.setSearchResults = (results) => this._setSearchResults(results);
+  }
+  componentDidMount() {
   }
   _setSearchResults(results) {
     this.setState({searchResults: results});
