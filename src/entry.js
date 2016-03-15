@@ -4,6 +4,8 @@ import {render} from 'react-dom';
 import {createHistory} from 'history';
 import {Router, Route, IndexRoute, Link, Navigation} from 'react-router';
 
+import Main from './components/main';
+
 class App extends React.Component{
 	constructor() {
 		super();
@@ -23,9 +25,7 @@ const history = createHistory()
 render((
 	<Router history={history}>
 		<Route path="/" component={App}>
-			<IndexRoute component={AutoGroup}/>
-			<Route path='auto_group' component={AutoGroup}/>
-			<Route path="org_spec" component={OrgSpec}/>
+			<IndexRoute component={Main}/>
 		</Route>
 	</Router>
 ), document.getElementById('app-container'))
