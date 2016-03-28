@@ -18,4 +18,7 @@ This system is agnostic of any hosting service, but there are deployment scripts
 ## Contributors
 If this start code was helpful to you, we'd love to hear about it.
 
-- Pan Wangperawong
+- [Pan Wangperawong]('mailto:panthongw@gmail.com')
+
+## Acknowledgements
+- [Tina Lacey](https://github.com/raptoria) - helped explain the technology
