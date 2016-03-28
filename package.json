@@ -1,7 +1,7 @@
 {
-  "name": "react-express-webpack-starter",
-  "version": "1.0.0",
-  "description": "Basic starter code for Webpack, React, Express, and Babel",
+  "name": "react-babel-webpack-express-starter",
+  "version": "0.0.1",
+  "description": "Basic starter code for React, Webpack, Babel, and Express",
   "main": "server.js",
   "scripts": {
     "build:dev": "webpack-dev-server --config webpack-dev-server.config.js --inline --hot --progress --colors",
@@ -14,7 +14,7 @@
     "babel",
     "react"
   ],
-  "author": "Pan W",
+  "author": "Pan Wangperawong",
   "dependencies": {
     "body-parser": "^1.14.1",
     "bootstrap": "^4.0.0-alpha.2",
