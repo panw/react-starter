@@ -20,5 +20,5 @@ If this start code was helpful to you, we'd love to hear about it.
 
 - [Pan Wangperawong]('mailto:panthongw@gmail.com')
 
-## Acknowledgements
-- [Tina Lacey](https://github.com/raptoria) - helped explain the technology
+## License
+[MIT](https://opensource.org/licenses/MIT)
