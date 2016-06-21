@@ -4,7 +4,6 @@ window.jQuery = $;
 window.Tether = require('tether');
 require('bootstrap');
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SearchInput from './search_input';
 
 
 export default class Main extends React.Component {
@@ -24,15 +23,7 @@ export default class Main extends React.Component {
     let {searchResults} = this.state;
     return (
       <div>
-        <SearchInput
-          setResults={this.setSearchResults}
-        />
-
-        <ul>
-        {searchResults.map((result, i) => {
-          return <li key={i}><img src={result.artworkUrl30}/></li>
-        })}
-        </ul>
+        I work!
       </div>
     );
   }
