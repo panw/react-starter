@@ -16,13 +16,13 @@ app.use(express.static(path.join(__dirname, "public"), {
 // Get HTML and replace SCRIPT_URL with Webpack build based on environment
 var html = fs.readFileSync(path.resolve(__dirname, "./src/index.html"), "utf-8"),
 		buildPath = "/build",
-		scriptUrl = process.env.node_env ? buildPath : "http://localhost:8080"+buildPath,//"http://10.161.252.30:8080/build",
+		scriptUrl = process.env.node_env ? buildPath : "http://localhost:8080"+buildPath,
 		html = html.replace("SCRIPT_URL", `${scriptUrl}/bundle.js`)
 
 // Serve index.html for root
 app.get("/*", function(req, res) { 
 	res.contentType = "text/html; charset=utf8";
-	res.setHeader('cache-control', 'max-age=0, private, must-revalidate'); // new header
+	res.setHeader('cache-control', 'max-age=0, private, must-revalidate');
 	res.end(html)
 })
 
