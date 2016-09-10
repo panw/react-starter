@@ -1,8 +1,7 @@
 // Require any dependency here for Webpack to bundle
 import React from 'react';
 import {render} from 'react-dom';
-import {createHistory} from 'history';
-import {Router, Route, IndexRoute, Link, Navigation} from 'react-router';
+import {Router, Route, IndexRoute, Link, Navigation, browserHistory} from 'react-router';
 
 import Main from './components/main';
 
@@ -20,10 +19,8 @@ class App extends React.Component{
 	}
 }
 
-const history = createHistory()
-
 render((
-	<Router history={history}>
+	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Main}/>
 		</Route>
